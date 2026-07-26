@@ -15,7 +15,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(96, 165, 250, 0.35);
+  background-color: rgba(126, 182, 246, 0.35);
 }
 
 @keyframes fadeUp {

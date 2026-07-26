@@ -17,22 +17,23 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sean Scott — Senior Frontend Software Engineer",
+  title: "Sean Scott — Senior Software Engineer",
   description:
-    "Portfolio of Sean Scott, Senior Frontend Software Engineer specializing in React, Angular, Vue.js, and TypeScript.",
+    "Portfolio of Sean Scott — Senior Software Engineer focused on Fullstack, AI/ML, and Data Engineering.",
   keywords: [
     "Sean Scott",
-    "Frontend Engineer",
-    "React",
-    "TypeScript",
     "Software Engineer",
+    "Fullstack",
+    "AI/ML",
+    "Data Engineering",
+    "Houston",
     "Portfolio",
   ],
   authors: [{ name: "Sean Scott" }],
   openGraph: {
-    title: "Sean Scott — Senior Frontend Software Engineer",
+    title: "Sean Scott — Senior Software Engineer",
     description:
-      "Building scalable frontend systems for enterprise web applications.",
+      "Fullstack, AI/ML, and Data Engineering — built with passion, grit, and continuous growth.",
     type: "website",
   },
 };

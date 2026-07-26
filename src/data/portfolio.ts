@@ -1,39 +1,46 @@
 export const personalInfo = {
   name: "Sean Scott",
-  title: "Senior Frontend Software Engineer",
-  tagline: "Building scalable, maintainable frontend systems for enterprise products",
+  title: "Senior Software Engineer",
+  tagline:
+    "Fullstack, AI/ML, and Data Engineering — built with passion, grit, and continuous growth",
   location: "Houston, TX",
-  email: "seanpscott89@outlook.com",
+  email: "scottscean@gmail.com",
   phone: "(682) 253-2632",
-  linkedin: "https://linkedin.com/in/seanpatrickscott",
+  linkedin: "https://www.linkedin.com/in/seanpatrickscott",
+  github: "https://github.com/seanb4t",
   summary:
-    "Senior Frontend Software Engineer with 10+ years of experience designing, building, and modernizing enterprise web applications, internal platforms, dashboards, and client-facing systems. Known for building maintainable UI systems, improving developer experience, mentoring engineers, and partnering closely with product, design, backend, QA, and business stakeholders.",
+    "Senior Software Engineer with 13+ years of experience delivering enterprise products across consulting, SaaS, and software environments. Focused on fullstack systems, AI/ML-powered products, and data engineering — with passion, professional presence, and the grit to see hard problems through.",
 };
+
+export const focusAreas = [
+  "Fullstack",
+  "AI/ML",
+  "Data Engineering",
+] as const;
 
 export const experience = [
   {
-    company: "McKinsey & Company",
-    role: "Senior Frontend Software Engineer",
+    company: "EPAM Systems",
+    role: "Senior Software Engineer",
     period: "Aug 2023 – Present",
     location: "Remote",
     highlights: [
-      "Lead frontend development for React and TypeScript applications supporting consulting, reporting, and workflow management.",
-      "Own frontend architecture including component design, state management, routing, accessibility, and test strategy.",
-      "Build reusable UI modules, dashboards, and data-heavy interfaces for consultants and operations teams.",
-      "Improve performance through optimized renders, component composition, and maintainable state flows.",
-      "Mentor engineers on TypeScript patterns, architecture, accessibility, and production readiness.",
+      "Lead with passion — owning complex product work across fullstack delivery and raising the bar for how teams ship.",
+      "Grow continuously — mentoring engineers through reviews, coaching, and hands-on pairing.",
+      "Bring professional presence — partnering with product, design, and stakeholders to ship on schedule.",
+      "Show grit — pushing through performance and delivery challenges until the work holds up in production.",
     ],
   },
   {
     company: "Accenture",
-    role: "Senior Frontend Engineer",
+    role: "Senior Software Engineer",
     period: "Sep 2019 – Jul 2023",
     location: "Houston, TX",
     highlights: [
-      "Delivered React, Angular, and TypeScript applications for enterprise digital transformation programs.",
-      "Led implementation of component libraries, form workflows, dashboards, and responsive business applications.",
-      "Modernized legacy JavaScript and Angular modules into TypeScript-based components.",
-      "Strengthened quality through Jest, React Testing Library, Cypress, and peer reviews.",
+      "Brought spirit to multi-client digital programs, keeping teams focused under changing priorities.",
+      "Grew continuously by modernizing systems and lifting quality across engagements.",
+      "Modeled professional presence through full-lifecycle collaboration with architects, QA, and clients.",
+      "Applied grit to cut production defects and strengthen release confidence.",
     ],
   },
   {
@@ -42,75 +49,52 @@ export const experience = [
     period: "Nov 2016 – Aug 2019",
     location: "Houston, TX",
     highlights: [
-      "Built enterprise interfaces for IT operations, administration, and monitoring workflows.",
-      "Developed dashboards, configuration screens, and data-driven pages with REST integrations.",
-      "Improved maintainability through standardized components and simplified state management.",
-      "Maintained test coverage with Jasmine, Karma, and Jest for stable enterprise releases.",
+      "Channeled passion into enterprise platforms that operations teams relied on daily.",
+      "Grew by standardizing shared patterns that made long-term ownership easier.",
+      "Kept a professional rhythm through Agile delivery, documentation, and production support.",
+      "Showed grit improving responsiveness and reliability under real product pressure.",
     ],
   },
   {
     company: "PROS",
-    role: "Frontend Developer",
+    role: "Software Developer",
     period: "Jul 2013 – Oct 2016",
     location: "Houston, TX",
     highlights: [
-      "Developed JavaScript and AngularJS features for pricing, analytics, and reporting applications.",
-      "Built form screens, interactive tables, and data-driven pages for enterprise users.",
-      "Established foundation in Agile delivery, code reviews, and production support practices.",
+      "Built early career grit shipping features for enterprise customers who needed results, not excuses.",
+      "Grew through collaboration with senior engineers and QA on hard production issues.",
+      "Brought spirit to Agile delivery, reviews, and the craft of reliable releases.",
     ],
   },
 ];
 
-export const skillCategories = [
+export const expertise = [
   {
-    label: "Frontend",
-    skills: [
-      "React",
-      "Angular",
-      "Vue.js",
-      "TypeScript",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "SCSS",
-      "RxJS",
-      "Redux",
-    ],
+    label: "Fullstack",
+    description:
+      "End-to-end product delivery — from interfaces people trust to services and platforms that scale with the business.",
   },
   {
-    label: "Backend & APIs",
-    skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "OAuth 2.0", "JWT"],
+    label: "AI/ML",
+    description:
+      "Building intelligent product experiences and applying models where they create real leverage for users and teams.",
   },
   {
-    label: "Testing & Quality",
-    skills: [
-      "Jest",
-      "React Testing Library",
-      "Cypress",
-      "Jasmine",
-      "Karma",
-      "Code Reviews",
-    ],
-  },
-  {
-    label: "Cloud & DevOps",
-    skills: ["AWS", "Docker", "GitHub Actions", "Jenkins", "CI/CD", "Linux"],
-  },
-  {
-    label: "Databases",
-    skills: ["PostgreSQL", "MySQL", "SQL Server", "MongoDB"],
+    label: "Data Engineering",
+    description:
+      "Reliable pipelines and data foundations that turn raw signals into decisions, insights, and durable product value.",
   },
 ];
 
 export const education = {
   degree: "Bachelor of Science in Computer Science",
-  school: "Texas A&M University",
+  school: "Rice University",
   period: "2009 – 2013",
 };
 
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
+  { label: "Expertise", href: "#expertise" },
   { label: "Contact", href: "#contact" },
 ];

@@ -1,6 +1,7 @@
 "use client";
 
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
@@ -33,6 +34,12 @@ const contactItems = [
     value: "seanpatrickscott",
     href: personalInfo.linkedin,
   },
+  {
+    icon: <GitHubIcon />,
+    label: "GitHub",
+    value: "seanb4t",
+    href: personalInfo.github,
+  },
 ];
 
 export default function Contact() {
@@ -64,8 +71,8 @@ export default function Contact() {
           <Grid size={{ xs: 12, md: 6 }}>
             <SectionHeading label="Contact" title="Get in Touch" />
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, maxWidth: 440 }}>
-              Open to senior frontend engineering roles, consulting opportunities,
-              and technical leadership discussions. Reach out via email or LinkedIn.
+              Open to roles where passion, grit, and professional presence matter.
+              Reach out via email, LinkedIn, or GitHub — I&apos;d love to connect.
             </Typography>
             <Button
               variant="contained"

@@ -2,9 +2,7 @@
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Box, Button, Chip, Container, Stack, Typography } from "@mui/material";
-import { personalInfo } from "@/data/portfolio";
-
-const stack = ["React", "TypeScript", "Angular", "Vue.js", "Node.js"];
+import { personalInfo, focusAreas } from "@/data/portfolio";
 
 export default function Hero() {
   return (
@@ -16,25 +14,28 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
+        bgcolor: "background.default",
       }}
     >
       <Box
-        sx={{
-          position: "absolute",
-          inset: 0,
-          background: (theme) =>
-            theme.palette.mode === "dark"
-              ? `
-                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(59, 130, 246, 0.12), transparent),
-                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(99, 102, 241, 0.08), transparent),
-                linear-gradient(180deg, #0B0F14 0%, #111827 100%)
-              `
-              : `
-                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(37, 99, 235, 0.08), transparent),
-                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(99, 102, 241, 0.05), transparent),
-                linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%)
+        sx={[
+          {
+            position: "absolute",
+            inset: 0,
+            bgcolor: "background.default",
+            backgroundImage: `
+              radial-gradient(ellipse 80% 60% at 10% 20%, rgba(59, 111, 168, 0.08), transparent),
+              radial-gradient(ellipse 60% 50% at 90% 80%, rgba(90, 101, 120, 0.05), transparent)
+            `,
+          },
+          (theme) =>
+            theme.applyStyles("dark", {
+              backgroundImage: `
+                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(126, 182, 246, 0.14), transparent),
+                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(168, 180, 200, 0.08), transparent)
               `,
-        }}
+            }),
+        ]}
       />
 
       <Box
@@ -43,8 +44,8 @@ export default function Hero() {
           inset: 0,
           opacity: 0.4,
           backgroundImage: `
-            linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px)
+            linear-gradient(rgba(168, 180, 200, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(168, 180, 200, 0.1) 1px, transparent 1px)
           `,
           backgroundSize: "64px 64px",
         }}
@@ -56,7 +57,7 @@ export default function Hero() {
             variant="subtitle1"
             sx={{ color: "primary.main", animation: "fadeUp 0.8s ease forwards" }}
           >
-            Senior Frontend Engineer
+            Senior Software Engineer
           </Typography>
 
           <Typography
@@ -94,16 +95,15 @@ export default function Hero() {
               opacity: 0,
             }}
           >
-            {stack.map((tech) => (
+            {focusAreas.map((area) => (
               <Chip
-                key={tech}
-                label={tech}
+                key={area}
+                label={area}
                 size="small"
                 sx={{
                   bgcolor: "background.paper",
                   border: 1,
                   borderColor: "divider",
-                  fontFamily: "var(--font-mono)",
                   fontSize: "0.75rem",
                 }}
               />

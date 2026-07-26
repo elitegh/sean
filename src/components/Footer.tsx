@@ -54,7 +54,7 @@ export default function Footer() {
             © {year} {personalInfo.name}. All rights reserved.
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Built with Next.js & Material UI
+            Built with care in Houston, TX
           </Typography>
         </Box>
       </Container>
