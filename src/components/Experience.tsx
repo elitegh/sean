@@ -1,6 +1,7 @@
 "use client";
 
-import { Box, Container, Stack, Typography } from "@mui/material";
+import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
+import { Box, Container, Link, Stack, Typography } from "@mui/material";
 import { experience } from "@/data/portfolio";
 import SectionHeading from "./SectionHeading";
 
@@ -36,12 +37,8 @@ export default function Experience() {
                 <Typography
                   variant="subtitle1"
                   color="primary.main"
-                  sx={{ mb: 1 }}
                 >
                   {job.period}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {job.location}
                 </Typography>
               </Box>
 
@@ -57,13 +54,42 @@ export default function Experience() {
                 </Typography>
                 <Typography
                   variant="body1"
+                  component="span"
                   sx={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 0.75,
                     fontWeight: 500,
                     color: "text.secondary",
-                    mb: 3,
+                    mb: 1,
                   }}
                 >
-                  {job.company}
+                  {job.url ? (
+                    <Link
+                      href={job.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      underline="hover"
+                      color="inherit"
+                      sx={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 0.5,
+                      }}
+                    >
+                      {job.company}
+                      <OpenInNewOutlinedIcon sx={{ fontSize: 14 }} />
+                    </Link>
+                  ) : (
+                    job.company
+                  )}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ mb: 3, maxWidth: 560, lineHeight: 1.6 }}
+                >
+                  {job.industryFocus}
                 </Typography>
 
                 <Stack spacing={1.5} component="ul" sx={{ m: 0, pl: 2.5 }}>

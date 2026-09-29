@@ -69,7 +69,23 @@ export default function About() {
             {education.degree}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {education.school} · {education.period}
+            <Box
+              component="a"
+              href={education.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                color: "inherit",
+                textDecoration: "none",
+                "&:hover": { textDecoration: "underline" },
+              }}
+            >
+              {education.school}
+            </Box>
+            {" · "}
+            {education.location}
+            {" · "}
+            {education.period}
           </Typography>
         </Box>
       </Container>
